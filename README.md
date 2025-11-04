@@ -13,13 +13,13 @@ It eliminates the need for manual calculations or spreadsheet formulas by provid
 
 ## 🚀 Features
 
-✅ **Instant tax calculation** based on annual income
-✅ **Supports both Old & New Tax Regimes**
-✅ **Displays slab-wise tax breakdown**
-✅ **Clean and responsive UI**
-✅ **Accurate computation based on applicable Indian tax slabs**
-✅ No backend required — **fully client-side**
-✅ Easy to use for all income groups
+✅ **Instant tax calculation** based on annual income<br>
+✅ **Supports both Old & New Tax Regimes**<br>
+✅ **Displays slab-wise tax breakdown**<br>
+✅ **Clean and responsive UI**<br>
+✅ **Accurate computation based on applicable Indian tax slabs**<br>
+✅ No backend required — **fully client-side**<br>
+✅ Easy to use for all income groups<br>
 
 ---
 
