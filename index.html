@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxMate - Indian Income Tax Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="assests/favicon.svg">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header animated">
+            <h1>TaxMate</h1>
+            <p>Smart Indian Income Tax Calculator with <span class="highlight">Old & New Regime</span> Support</p>
+            
+            <div class="regime-selector">
+                <button class="regime-btn active" id="oldRegimeBtn">Old Tax Regime</button>
+                <button class="regime-btn" id="newRegimeBtn">New Tax Regime</button>
+            </div>
+        </div>
+
+        <div class="main-content animated">
+            <div class="calculator-section">
+                <h2 class="section-title">Income Details</h2>
+                
+                <div class="input-group">
+                    <label for="basicSalary">Basic Salary (₹)</label>
+                    <input type="number" id="basicSalary" placeholder="Enter your basic salary">
+                </div>
+                
+                <div class="input-group">
+                    <label for="hra">House Rent Allowance (₹)</label>
+                    <input type="number" id="hra" placeholder="Enter HRA amount">
+                </div>
+                
+                <div class="input-group">
+                    <label for="otherIncome">Other Income (₹)</label>
+                    <input type="number" id="otherIncome" placeholder="Enter other income">
+                </div>
+
+                <div class="deductions-section" id="deductionsSection">
+                    <h3 class="deductions-title">Deductions & Exemptions</h3>
+                    
+                    <div class="input-group">
+                        <label for="section80C">Section 80C (₹)</label>
+                        <input type="number" id="section80C" placeholder="Max ₹1,50,000">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="section80D">Section 80D (₹)</label>
+                        <input type="number" id="section80D" placeholder="Health insurance premium">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="hraExemption">HRA Exemption (₹)</label>
+                        <input type="number" id="hraExemption" placeholder="HRA exemption amount">
+                    </div>
+                </div>
+            </div>
+
+            <div class="results-section">
+                <h2 class="section-title">Tax Calculation Results</h2>
+                
+                <div class="results-grid" id="resultsGrid">
+                    <div class="result-item">
+                        <span class="result-label">Gross Income:</span>
+                        <span class="result-value" id="grossIncome">₹0</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Total Deductions:</span>
+                        <span class="result-value" id="totalDeductions">₹0</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Taxable Income:</span>
+                        <span class="result-value" id="taxableIncome">₹0</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Income Tax:</span>
+                        <span class="result-value" id="incomeTax">₹0</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Health & Education Cess:</span>
+                        <span class="result-value" id="cess">₹0</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Net Tax Liability:</span>
+                        <span class="result-value" id="netTax">₹0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tax-slabs animated">
+            <h2 class="slabs-title">Tax Slabs & Rates</h2>
+            <div class="slabs-grid" id="slabsGrid">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
